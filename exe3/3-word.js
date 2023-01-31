@@ -1,15 +1,15 @@
 let word = document.querySelector("input#word");
-let lista = document.querySelector("select#flista");
+let list = document.querySelector("select#flist");
 let res = document.querySelector("div#res");
 
 function wordInLoop() {
   let wordS = String(word.value);
 
   for (i = 0; i < wordS.length; i += 1) {
-    let itemLista = document.createElement("option");
-    itemLista.text = `${wordS[i]}, `;
+    let listItem = document.createElement("option");
+    listItem.text = `${wordS[i]}, `;
     alert(`Letra =${wordS[i]} da palavra: ${wordS}`);
-    lista.appendChild(itemLista);
+    list.appendChild(listItem);
     res.innerHTML = "";
   }
 }
