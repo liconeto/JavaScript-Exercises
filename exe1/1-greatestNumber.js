@@ -2,14 +2,19 @@ let num1 = document.querySelector("input#num1");
 let num2 = document.querySelector("input#num2");
 
 function greatestNumber(num1, num2) {
-  let numero1 = Number(num1.value);
-  let numero2 = Number(num2.value);
+  let firstNum = Number(num1.value);
+  let secondNum = Number(num2.value);
 
-  if (numero1 == 0 || numero2 == 0 || numero1 == null || numero2 == null) {
-  } else if (numero1 > numero2) {
-    alert(`O número ${numero1} é maior que o número ${numero2}`);
+  if (
+    firstNum == 0 ||
+    secondNum == 0 ||
+    firstNum == null ||
+    secondNum == null
+  ) {
+  } else if (firstNum > secondNum) {
+    alert(`The number ${firstNum} is bigger than number ${secondNum}`);
   } else {
-    alert(`O número ${numero2} é maior que o número ${numero1}`);
+    alert(`The number ${secondNum} is bigger than number ${firstNum}`);
   }
 }
 
