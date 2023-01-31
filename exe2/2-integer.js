@@ -1,15 +1,15 @@
 let num1 = document.querySelector("input#num1");
-let lista = document.querySelector("select#flista");
+let list = document.querySelector("select#flist");
 let res = document.querySelector("div#res");
 
 function integerInLoop() {
-  let numero1 = Number(num1.value);
+  let intNum = Number(num1.value);
 
-  for (i = 0; i <= numero1; i += 1) {
-    let itemLista = document.createElement("option");
-    itemLista.text = `${i}, `;
-    alert(`Número =${i} &&  inteiro inserido: ${numero1}`);
-    lista.appendChild(itemLista);
+  for (i = 0; i <= intNum; i += 1) {
+    let listItem = document.createElement("option");
+    listItem.text = `${i}, `;
+    alert(`Number =${i} &&  inserted integer: ${intNum}`);
+    list.appendChild(listItem);
     res.innerHTML = "";
   }
 }
