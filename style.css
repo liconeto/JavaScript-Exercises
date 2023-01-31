@@ -63,6 +63,11 @@ section div input#button{
     background-color: #00BFFF;
     border-radius: 7px;
 }
+
+table{
+    border: 1px #000000 solid;
+}
+
 footer{
     color: white;
     text-align: center;
