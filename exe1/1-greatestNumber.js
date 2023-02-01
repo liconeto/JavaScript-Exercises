@@ -5,16 +5,14 @@ function greatestNumber(num1, num2) {
   let firstNum = Number(num1.value);
   let secondNum = Number(num2.value);
 
-  if (
-    firstNum == 0 ||
-    secondNum == 0 ||
-    firstNum == null ||
-    secondNum == null
-  ) {
-  } else if (firstNum > secondNum) {
-    alert(`The number ${firstNum} is bigger than number ${secondNum}`);
-  } else {
-    alert(`The number ${secondNum} is bigger than number ${firstNum}`);
+  if (!firstNum == 0 || !secondNum == 0) {
+    if (firstNum === secondNum) {
+      alert(`The number ${firstNum} and the number ${secondNum}, are equals`);
+    } else if (firstNum > secondNum) {
+      alert(`The number ${firstNum} is bigger than number ${secondNum}`);
+    } else {
+      alert(`The number ${secondNum} is bigger than number ${firstNum}`);
+    }
   }
 }
 
