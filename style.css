@@ -52,11 +52,21 @@ div a.comeBack{
 section div input{
     width: 90%;
 }
-
+section div input.radio{
+    width: 10%;
+}
 select#flist{
     width: 90%;
     background-color: #FFFAF0;
     border-radius: 5px;
+}
+
+select#operation{
+    background-color: #DDA0DD;
+    width: 30%;
+    display: inline-table;
+    text-align: center;
+
 }
 
 section div input#button{
