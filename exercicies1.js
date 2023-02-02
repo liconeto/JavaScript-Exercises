@@ -26,7 +26,7 @@ console.log("###################### 4 ######################")
 
 console.log("###################### 5 ######################")
 // Write a program that takes an age as a parameter and then uses a conditional structure to check whether the person is of legal age (18 years or older) or a minor.
-
+//
 
 
 
