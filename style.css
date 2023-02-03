@@ -76,6 +76,19 @@ section div input#button{
 
 table{
     border: 1px #000000 solid;
+    border-radius: 4px;
+    text-align: center;
+}
+
+table th {
+    border: 1px solid #6495ED;
+    border-bottom: 2px solid #6495ED;
+    background: #F0F8FF;
+    font-size: medium;
+}
+table td {
+    background: #B0E0E6;
+    font-size: small;
 }
 
 footer{

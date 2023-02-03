@@ -8,30 +8,27 @@ function calculator(n1, n2, op) {
   let numSec = Number(n2.value);
   let operator = op.value;
 
-  let aviso = document.createElement("p");
+  let alertInf = document.createElement("p");
 
-  if (!numFir == 0 && !numSec == 0 && !operator == "") {
-    //alert(`${numFir}, ${operator}, ${numSec}`);
-    switch (operator) {
-      case "+":
-        aviso.innerText = `${numFir} + ${numSec} = ${numFir + numSec}`;
-        break;
-      case "-":
-        aviso.innerText = `${numFir} - ${numSec} = ${numFir - numSec}`;
-        break;
-      case "*":
-        aviso.innerText = `${numFir} * ${numSec} = ${numFir * numSec}`;
-        break;
-      case "/":
-        aviso.innerText = `${numFir} / ${numSec} = ${(numFir / numSec).toFixed(
-          2
-        )}`;
-        break;
-      default:
-        aviso.innerText = `Nada para nada! ${numFir} ,${numSec} , ${operator}`;
-    }
-    document.getElementById("respCheck").appendChild(aviso);
+  switch (operator) {
+    case "+":
+      alertInf.innerText = `${numFir} + ${numSec} = ${numFir + numSec}`;
+      break;
+    case "-":
+      alertInf.innerText = `${numFir} - ${numSec} = ${numFir - numSec}`;
+      break;
+    case "*":
+      alertInf.innerText = `${numFir} * ${numSec} = ${numFir * numSec}`;
+      break;
+    case "/":
+      alertInf.innerText = `${numFir} / ${numSec} = ${(numFir / numSec).toFixed(
+        2
+      )}`;
+      break;
+    default:
+      alertInf.innerText = `Insert two numbers and select the operator ! ${numFir} ,${numSec} , ${operator}`;
   }
+  document.getElementById("respCheck").appendChild(alertInf);
 }
 
 calculator(num1, num2, operation);

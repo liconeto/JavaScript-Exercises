@@ -1,18 +1,20 @@
 let wordS = document.querySelector("input#word");
-let res = document.querySelector("div#respCheck");
+let response = document.querySelector("div#respCheck");
 let stringN = [];
 
 function checkPalindrome() {
-  let dados = [];
-  for (const i in wordS) {
-    if (Object.hasOwnProperty.call(wordS, i)) {
-      const element = wordS[i];
-      dados[i].push(element);
-    }
+  let reverseWord = "";
+
+  reverseWord = String(wordS.value).split("").reverse().join("");
+
+  if (String(wordS.value) === reverseWord) {
+    alert(`it is a palindrome`);
+  } else {
+    alert(`not is a palindrome`);
   }
-  alert(`${dados}`);
+
   let para = document.createElement("p");
 
-  para.innerText += `The numbers informed are  ${tot} `;
+  para.innerText += `The word informed :  ${wordS.value} and ${reverseWord}`;
   document.body.appendChild(para);
 }

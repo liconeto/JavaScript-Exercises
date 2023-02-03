@@ -4,40 +4,34 @@ let multtable = document.querySelector("div#multtable");
 function multiply() {
   let num1 = Number(numInt.value);
 
-  //let tableM = document.getElementById("multtable");
-  let tabela = document.createElement("table");
-  let cabecalho = document.createElement("thead");
-  let corpo = document.createElement("tbody");
-  let linha = document.createElement("tr");
-  let titulo = document.createElement("th");
-  let titulo2 = document.createElement("th");
-  let titulo3 = document.createElement("th");
-  let data1 = document.createElement("td");
-  let data2 = document.createElement("td");
-  let data3 = document.createElement("td");
+  let multiplyTable = document.createElement("table");
+  let theadTable = document.createElement("thead");
+  let tbodyTable = document.createElement("tbody");
 
-  titulo.innerText = "Operador";
-  titulo2.innerText = "multiplicado";
-  titulo3.innerText = "Resultado";
+  let tableLine = document.createElement("tr");
+  let titleTable = document.createElement("th");
+  let titleTable2 = document.createElement("th");
+  let titleTable3 = document.createElement("th");
 
-  linha.appendChild(titulo);
-  linha.appendChild(titulo2);
-  linha.appendChild(titulo3);
+  titleTable.innerText = "Operator";
+  titleTable2.innerText = "Multiply";
+  titleTable3.innerText = "Result";
 
-  cabecalho.appendChild(linha);
-  tabela.appendChild(cabecalho);
+  tableLine.appendChild(titleTable);
+  tableLine.appendChild(titleTable2);
+  tableLine.appendChild(titleTable3);
 
-  for (i = 1; i < 11; i += 1) {
-    data1.innerText = `${num1} *`;
-    data2.innerText = `${i} =`;
-    data3.innerText = `${num1 * i}`;
+  theadTable.appendChild(tableLine);
+  multiplyTable.appendChild(theadTable);
 
-    linha.appendChild(data1);
-    linha.appendChild(data2);
-    linha.appendChild(data3);
-
-    corpo.appendChild(linha);
-    tabela.appendChild(corpo);
-    document.getElementById("multtable").appendChild(tabela);
+  for (i = 0; i < 11; i += 1) {
+    let tableLine = multiplyTable.insertRow();
+    let cellOperator = tableLine.insertCell(0);
+    let cellMultiply = tableLine.insertCell(1);
+    let cellResult = tableLine.insertCell(2);
+    cellOperator.innerHTML = `${num1}  X`;
+    cellMultiply.innerHTML = `${i}  =`;
+    cellResult.innerHTML = `${num1 * i}`;
   }
+  document.getElementById("multtable").appendChild(multiplyTable);
 }

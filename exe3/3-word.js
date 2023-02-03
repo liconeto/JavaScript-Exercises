@@ -1,6 +1,6 @@
 let word = document.querySelector("input#word");
 let list = document.querySelector("select#flist");
-let res = document.querySelector("div#res");
+let response = document.querySelector("div#res");
 
 function wordInLoop() {
   let wordS = String(word.value);
@@ -10,6 +10,6 @@ function wordInLoop() {
     listItem.text = `${wordS[i]}, `;
     alert(`Letra =${wordS[i]} da palavra: ${wordS}`);
     list.appendChild(listItem);
-    res.innerHTML = "";
+    response.innerHTML = "";
   }
 }

@@ -16,6 +16,6 @@ function fibonacci() {
   }
 
   const para = document.createElement("p");
-  para.innerText = `Greatest number : ${fiboSeq}`;
+  para.innerText = `Sequense of Fibonacci : ${fiboSeq}`;
   document.body.appendChild(para);
 }

@@ -1,6 +1,6 @@
 let num1 = document.querySelector("input#num1");
 let list = document.querySelector("select#flist");
-let res = document.querySelector("div#res");
+let response = document.querySelector("div#res");
 
 function integerInLoop() {
   let intNum = Number(num1.value);
@@ -10,6 +10,6 @@ function integerInLoop() {
     listItem.text = `${i}, `;
     alert(`Number =${i} &&  inserted integer: ${intNum}`);
     list.appendChild(listItem);
-    res.innerHTML = "";
+    response.innerHTML = "";
   }
 }
