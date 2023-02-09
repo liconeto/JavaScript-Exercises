@@ -99,6 +99,29 @@ table td {
     font-size: small;
 }
 
+section div table.ticTocToe{
+    size: 200px;
+    height: 200px;
+    width: 200px;
+    background: #FFFAF0;
+    font-size: small;
+}
+
+table th.ticTocToe {
+    background: #B0E0E6;
+    font-size: small;
+}
+table td.ticTocToe {
+    background: #B0E0E6;
+    font-size: small;
+}
+
+input.ticTocToe{
+    background: #B0E0E6;
+    border: none;
+}
+
+    
 footer{
     color: white;
     text-align: center;
