@@ -19,14 +19,13 @@ function turn90degrees(id) {
 let newArray = [];
 let column = arrayBi.length - 1;
 let cell = 0;
-//newArray = [[]];
+
 console.log(`Tamanho de ${column}`);
 for (j = 0; j <= column; j += 1) {
   cell = j;
 
   for (i = column; i >= 0; i -= 1) {
     newArray.push(arrayBi[i][cell]);
-    console.log(`${newArray.length}`);
   }
 }
 console.log(arrayBi);
